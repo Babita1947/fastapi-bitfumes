@@ -19,5 +19,6 @@ class User(Base):
     name = Column(String)
     email = Column(String)
     password = Column(String)
+    
 
     blogs = relationship("Blog", back_populates="creator")
